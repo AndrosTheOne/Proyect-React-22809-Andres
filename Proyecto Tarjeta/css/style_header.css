@@ -1,0 +1,67 @@
+
+@font-face 
+{
+    font-family: NewWorldFont;
+    src: url(../fonts/IMFellDWPica-Regular.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 100;  
+}
+
+@font-face 
+{
+    font-family: AmazonEmber;
+    src: url(../fonts/Amazon\ Ember.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 100;  
+}
+
+@font-face 
+{
+    font-family: Saudagar;
+    src: url(../fonts/Saudagar.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 100;  
+}
+
+::-webkit-scrollbar 
+{
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {background: rgb(50, 50, 50);}
+
+/* Handle */
+::-webkit-scrollbar-thumb {background: rgb(70, 70, 70)}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {background: rgb(231, 185, 33);}
+
+html
+{ 
+    /*------------*/
+    /*height: 100%;*/
+    overflow-x: hidden;
+    /*overflow: hidden;*/
+    background: rgb(50, 50, 50);
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased;
+
+    /*background-image: url('../img/texture-bottom.jpg');
+
+    background-position: center;
+
+    background-size: cover;
+
+    background-attachment: fixed;*/
+}
+
+/*--------------------------------- HEADER ---------------------------------*/

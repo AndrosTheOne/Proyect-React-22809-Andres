@@ -1,0 +1,171 @@
+
+/*--------------------------------- MAIN ---------------------------------*/
+
+main {color: white}
+
+.MainContainer
+{
+    display: flex;
+
+    flex-direction: column;
+
+    height: calc(100vh - 50px);
+
+    min-height: 500px;
+
+    justify-content: space-evenly;
+
+    align-items: center;
+
+    /*background-color: orange;*/
+}
+
+.MainContainer > div 
+{
+    display: flex;
+    
+    width: 80vw;
+
+    /*min-height: 200px; /* para que en modo celu, los cuadrados sean del mismo tamaño*/
+
+    /*margin: 1.5vh;*/
+
+    flex-direction:row;
+
+    align-items: center;
+
+    justify-content: space-evenly;
+
+    box-shadow: 0 1px 10px rgba(104, 103, 103, 0.5);
+
+    position: relative;
+
+    /*background-color: rgba(70, 70, 70, 0.5);*/
+}
+
+.MainContainer > div:before
+{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    -webkit-filter: grayscale(0) blur(0);
+    filter: grayscale(0) blur(0);
+    transition: 0.7s ease-in-out;
+
+    position: absolute;
+}
+
+.MainContainer > div:hover:before
+{
+    -webkit-filter: grayscale(100%) blur(2px);
+    filter: grayscale(100%) blur(2px);
+    transition: 0.7s ease-in-out;
+}
+
+.container-banner-marauder:before
+{
+    background-image: url('../img/Banner\ Marauder.png');
+}
+
+.container-banner-covenant:before
+{
+    background-image: url('../img/Banner\ Covenant.png');
+}
+
+.container-banner-syndicate:before
+{
+    background-image: url('../img/Banner\ Syndicate.png');
+}
+
+.MainContainer > div > div > p
+{
+    opacity: 0%;
+}
+
+.MainContainer > div:hover > div > p
+{
+    opacity: 1;
+
+    transition: 0.7s ease-in-out;
+
+    text-shadow:    
+    0px 0px 5px #000000, 
+    0px 0px 5px #000000, 
+    0px 0px 10px #000000, 
+    0px 0px 10px #000000,
+    0px 0px 15px #000000, 
+    0px 0px 15px #000000,
+    0px 0px 20px #000000,
+    0px 0px 25px #000000;
+}
+
+.faction-text
+{
+    display: flex;
+
+    flex-direction: column;
+
+    position: relative;
+
+    height: 80%;
+    width: 80%;
+
+    justify-content: space-evenly;
+
+    margin: 2% 0px 2% 0%;
+
+    /*background-color: blue;*/
+
+}
+
+#faction-title
+{
+    font-family: NewWorldFont;
+
+    font-size: calc(20px + .5vw);
+
+    text-align: left;
+
+    color: rgb(218, 194, 119);
+
+    margin: 0px 10px 2.5px 0px;/*NO BORRAR*/
+}
+
+#faction-description
+{
+    font-family: AmazonEmber;
+
+    font-size: calc(12px + .5vw);
+
+    text-align: left;
+
+    color: white;
+
+    margin: 2.5px 10px 0px 0px;/*NO BORRAR*/
+}
+
+.MainContainer > div > img /*LOGO FACCION*/
+{
+    width: 15vh;
+    min-width: 100px;
+
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+@media (max-width: 630px) 
+{
+    .MainContainer > div 
+    {
+        width: 92vw;
+        min-height: 150px;
+    }  
+}
+
